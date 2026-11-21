@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITI San Jose - Campus Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">WESTBRIDGE</div>
+
+        <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="#history">About</a>
+        <a href="#mission-vision">Vision & Mission</a>
+        <a href="#witi-hymn">WITI Hymn</a>
+        <a href="#contact">Contact</a>
+    </nav>
+        <div class="header-search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="facultySearchInput" placeholder="Search...">
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
+    </header>
+
+    <div id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()" aria-label="Close Menu">×</button>
+        <div class="menu-title">
+            <span>WITI</span>
+            <p>San Jose Branch</p>
+        </div>
+        <nav>
+            <label class="cyber-switch">
+  <input type="checkbox" id="themeToggleCheckbox" onchange="toggleDarkMode()">
+  <span class="cyber-slider">
+    <span class="cyber-icon sun">☀️</span>
+    <span class="cyber-icon moon">🌙</span>
+    <span class="cyber-ball"></span>
+  </span>
+</label>
+            <a href="form.html">Enrollment Form</a>
+            <a href="enrollees.html">Pending Enrollments</a>
+            <a href="campus.html" class="active">Campus Gallery</a>
+            <a href="loc.html">Our Location</a>
+        </nav>
+    </div>
+    <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
+<section id="gallery" class="gallery-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 40px;">
+        <p class="small-title" style="color: #2563eb; font-weight: 700; letter-spacing: 1px;">CAMPUS DIRECTORY</p>
+        <h2 style="font-size: 32px; color: #0f172a; margin: 5px 0 10px 0;">📸 Campus Gallery</h2>
+    </div>
+
+    <div class="facility-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+        
+        <div class="facility-card glint-card" data-title="GROUND FLOOR" data-desc="Main entrance lobby, Information Desk, Administrative Offices, Registrar, and Student Services." data-img="main ground.jpg">
+            <img src="main ground.jpg" alt="Ground Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">GROUND FLOOR</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="ADMIN OFFICE" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="admin.jpg">
+            <img src="admin.jpg" alt="Admin Office">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">ADMIN OFFICE</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="COMPUTER LABORATORY" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="comlab.jpg">
+            <img src="comlab.jpg" alt="Computer Laboratory">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">COMPUTER LABORATORY</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="CANTEEN" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="canteen.jpg">
+            <img src="canteen.jpg" alt="Canteen">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">CANTEEN</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="LIBRARY" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="library.jpg">
+            <img src="library.jpg" alt="Library">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">LIBRARY</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="GRADE 11 FACULTY" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="g11.jpg">
+            <img src="g11.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">GRADE 11 FACULTY</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="GRADE 12 FACULTY" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="g12.jpg">
+            <img src="g12.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">GRADE 12 FACULTY</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="MUSIC ROOM" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="music.jpg">
+            <img src="music.jpg" alt="MUSIC ROOM">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">MUSIC ROOM</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="LEISURE ROOM" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="leisure.jpg">
+            <img src="leisure.jpg" alt="LEISURE ROOM">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">LEISURE ROOM</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="ROOFTOP IN MAIN" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="roof2.img">
+            <img src="roof2.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">ROOFTOP IN MAIN</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="GUARD HOUSE" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="his.webp">
+            <img src="guard.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">GUARD HOUSE</h4>
+            </div>
+
+        <div class="facility-card glint-card" data-title="ROOFTOP IN DOLE" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="rooftop.jpg">
+            <img src="rooftop.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">ROOFTOP IN DOLE</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="FIRST FLOOR IN DOLE CLASSROOMS" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="1st.jpg">
+            <img src="1st.jpg" alt="First Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">FIRST FLOOR IN DOLE CLASSROOMS</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="SECOND FLOOR IN DOLE CLASSROOMS" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="sec.jpg">
+            <img src="sec.jpg" alt="Second Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">SECOND FLOOR IN DOLE CLASSROOMS</h4>
+        </div>
+
+        <div class="facility-card glint-card" data-title="THIRD FLOOR IN DOLE ROOMS" data-desc="Computer Laboratories equipped with high-spec PCs, Programming lecture rooms, and Faculty Office." data-img="3rd.jpg">
+            <img src="3rd.jpg" alt="Third Floor">
+            <h4 style="color: #2563eb; font-size: 20px; font-weight: 800; margin: 12px 0 6px 0;">THIRD FLOOR IN DOLE ROOMS</h4>
+        </div>
+        
+        </section>
+    </main>
+
+    <footer class="luxury-footer" style="text-align: center; padding: 1.5rem; color: #94a3b8; font-size: 0.85rem;">
+    <p>© 2026 Westbridge Institute of Technology, Inc. All rights reserved.</p>
+    <div style="margin-top: 0.5rem; display: flex; justify-content: center; gap: 15px;">
+        <a href="privacy.html" style="color: #38bdf8; text-decoration: none;">Privacy Policy</a>
+        <span>•</span>
+        <a href="terms.html" style="color: #38bdf8; text-decoration: none;">Terms of Service</a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

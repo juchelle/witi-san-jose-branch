@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westbridge Institute of Technology, Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+        <div class="logo">WESTBRIDGE</div>
+
+        <nav class="header-nav">
+        <a href="#home">Home</a>
+        <a href="#history">About</a>
+        <a href="#mission-vision">Vision & Mission</a>
+        <a href="#witi-hymn">WITI Hymn</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+        <div class="header-search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="facultySearchInput" placeholder="Search...">
+        <div id="searchHistoryDropdown" class="search-history-dropdown"></div>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
+    </header>
+
+    <div id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()" aria-label="Close Menu">×</button>
+        <div class="menu-title">
+            <span>WITI</span>
+            <p>San Jose Branch</p>
+        </div>
+        <nav>
+
+            <label class="cyber-switch">
+  <input type="checkbox" id="themeToggleCheckbox" onchange="toggleDarkMode()">
+  <span class="cyber-slider">
+    <span class="cyber-icon sun">☀️</span>
+    <span class="cyber-icon moon">🌙</span>
+    <span class="cyber-ball"></span>
+  </span>
+</label>
+            <a href="form.html">Enrollment Form</a>
+            <a href="enrollees.html">Pending Enrollments</a>
+            <a href="campus.html">Campus Gallery</a>
+            <a href="loc.html">Our Location</a>
+        </nav>
+    </div>
+
+    <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <main>
+        <section id="home" class="hero">
+    <div class="slides">
+        <img src="his.webp">
+        <img src="1.jpg" >
+        <img src="2.jpg" >
+        <img src="3.jpg" >
+        <img src="4.jpg" >
+        <img src="5.jpg" >
+        <img src="6.jpg" >
+        <img src="7.jpg" >
+        <img src="8.jpg" >
+        <img src="9.jpg" >
+        <img src="10.jpg" >
+        <img src="11.jpg" >
+        <img src="12.jpg" >
+        <img src="13.jpg" >
+        <img src="14.jpg" >
+    </div>
+
+    <canvas id="matrixCanvas"></canvas>
+            <div class="hero-text">
+        <span class="welcome">✨ WELCOME TO WITI SAN JOSE</span>
+        <h1>Westbridge Institute<br>of <span>Technology, Inc.</span></h1>
+        <h2>San Jose Branch</h2>
+        <p class="description">
+            Empowering students through quality education, technology, and skills for the future.
+        </p>
+            </div>
+        </section>
+
+        <section id="history" class="history-section-clean">
+            <div class="history-container-custom">
+                <div class="history-img-box">
+                    <img src="his.webp" alt="WITI History">
+                </div>
+                <div class="history-text-box">
+                    <h2>Branch of WITI San Jose</h2>
+                   <p style="text-align: justify;">
+                        <i><b>Westbridge Institute of Technology, Inc. (WITI)</b></i> is a progressive technical-vocational and higher education institution in the Philippines, led by its <i><b>School President, Ms. Christine P. Rosales</b></i>, alongside  <i><b>owner and VP for Operations, Mr. Henry M. Basilan</b></i>.
+                        Headquartered at its main campus in Cabuyao, Laguna, the institution is dedicated to molding disciplined and skilled professionals through competitive Senior High School tracks, College courses (such as BS Criminology), and CHED-registered technical programs like the Associate in Computer Technology specializing in CNC Programming. With multiple branches across regions—including Rizal and Iloilo—the school provides a modern, motivating environment designed to help students discover opportunities and shape a brighter future.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<section id="mission-vision" class="witi-mv-box-section">
+    <div class="witi-mv-container">
+        
+        <div class="witi-mv-header">
+            <h2>Our Vision & Mission</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="witi-mv-grid">
+    
+            <div class="mv-framed-box glint-card">
+                <div class="box-inner-header">
+                    <span class="mv-roman">VISION</span>
+                    <span class="mv-badge-pill">Aspirations</span>
+                </div>
+                <h3>Building a Self-Sustaining Nation</h3>
+                <p class="mv-text">
+                    "Westbridge Institute of Technology, Inc., envisions a nation of Filipino youth committed in providing their endeavors in uplifting the Filipino lives through the skills, moral, and ethical values they have learned from the institution; a nation of well-rounded citizens with high standards of living without any need nor reason to leave the country to attain a better life."
+                </p>
+            </div>
+
+            <div class="mv-framed-box glint-card">
+                <div class="box-inner-header">
+                    <span class="mv-roman">MISSION</span>
+                    <span class="mv-badge-pill">Commitment</span>
+                </div>
+                <h3>Empowering Future Leaders</h3>
+                <p class="mv-text">
+                    "Westbridge Institute of Technology, Inc., conscious of the imperatives of Filipino nation building and the ideals of a total community, commits itself to provide a practical, relevant, and quality education to students who will soon become future leaders of the country and will also empower the youth with moral and ethical values for a better nation."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="programs" class="witi-programs-section">
+    <div class="programs-container">
+        <div class="section-header-center">
+            <p class="small-title">SENIOR HIGH SCHOOL OFFERINGS</p>
+            <h2>Explore Our Tracks & Clusters</h2>
+            <p class="section-desc">Building your future through quality technical and academic education at WITI San Jose.</p>
+        </div>
+
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'techpro-track')">TechPro Track</button>
+            <button class="tab-btn" onclick="switchTab(event, 'academic-track')">Academic Track</button>
+        </div>
+
+        <div id="techpro-track" class="tab-content active">
+            <div class="program-grid">
+                <div class="program-card glint-card">
+                    <h3>ICT-SCPT</h3>
+                    <p class="program-intro">Information and Communications Technology training focused on computer systems, basic programming, and modern digital skills.</p>
+                    <div class="program-expectations">
+                        <h4>What to Expect:</h4>
+                        <ul>
+                            <li>Hands-on PC assembly, hardware troubleshooting, and networking.</li>
+                            <li>Basic web development, software applications, and digital graphics.</li>
+                            <li>Preparation for NC II certifications and technical IT roles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-card glint-card">
+                    <h3>HT</h3>
+                    <p class="program-intro">Hospitality Technology courses designed to equip students with practical skills for the service, culinary, and tourism industries.</p>
+                    <div class="program-expectations">
+                        <h4>What to Expect:</h4>
+                        <ul>
+                            <li>Practical training in food preparation, kitchen operations, and customer service.</li>
+                            <li>Hotel and restaurant management fundamentals and front-office skills.</li>
+                            <li>Real-world industry exposure and hospitality NC II skills training.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="academic-track" class="tab-content">
+            <div class="program-grid">
+                <div class="program-card glint-card">
+                    <h3>STEM</h3>
+                    <p class="program-intro">Science, Technology, Engineering, and Mathematics strand tailored for students pursuing analytical and technical college degrees.</p>
+                    <div class="program-expectations">
+                        <h4>What to Expect:</h4>
+                        <ul>
+                            <li>Advanced math, calculus, chemistry, physics, and scientific research.</li>
+                            <li>Critical thinking, data analysis, and laboratory experiments.</li>
+                            <li>Preparation for Engineering, IT, Medical, and Science college courses.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-card glint-card">
+                    <h3>ASSH</h3>
+                    <p class="program-intro">Arts, Social Sciences, and Humanities strand designed for future leaders, communicators, educators, and social advocates.</p>
+                    <div class="program-expectations">
+                        <h4>What to Expect:</h4>
+                        <ul>
+                            <li>Public speaking, creative writing, social research, and debate.</li>
+                            <li>Understanding human behavior, societal issues, arts, and governance.</li>
+                            <li>Preparation for Law, Education, Communication, Psychology, and Public Admin.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-card glint-card">
+                    <h3>ABM</h3>
+                    <p class="program-intro">Accountancy, Business, and Management strand built for future entrepreneurs, corporate professionals, and business leaders.</p>
+                    <div class="program-expectations">
+                        <h4>What to Expect:</h4>
+                        <ul>
+                            <li>Fundamentals of accounting, business math, marketing, and economics.</li>
+                            <li>Creating business plans, financial management, and simulated feasibility studies.</li>
+                            <li>Preparation for Accountancy, Business Admin, Finance, and Entrepreneurship degrees.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="people" class="people-section">
+            <p class="small-title">OUR INSPIRING COMMUNITY</p>
+            <h2>The People Behind WITI</h2>
+            <p class="people-intro">
+                Honoring the visionary administrators and passionate teachers who shape the Westbridge community. Click any card to view their complete profile!
+            </p>
+
+            <h3 class="category-title">Current Administration</h3>
+            <div class="people-grid">
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="nice.jpg" alt="Principal"></div>
+                    <div class="person-info">
+                        <h3>Necie A. Estorgio</h3>
+                        <p class="position">Principal</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                    <div class="person-card glint-card">
+                    <div class="person-photo"><img src="jefding.jpg" alt="Assistant Principal"></div>
+                    <div class="person-info">
+                        <h3>Jayfferson Prado</h3>
+                        <p class="position">Assistant Principal/Teacher</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="sam.jpg" alt="Admin"></div>
+                    <div class="person-info">
+                        <h3>Samantha Ayessa S. Mingao</h3>
+                        <p class="position">Admin</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="dave.jpg" alt="Admin"></div>
+                    <div class="person-info">
+                        <h3>Deib Alburo</h3>
+                        <p class="position">Admin</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="joel.jpg" alt="Admin"></div>
+                    <div class="person-info">
+                        <h3>Joel Marisga</h3>
+                        <p class="position">Maintenance</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="niel.jpg" alt="Admin"></div>
+                    <div class="person-info">
+                        <h3>Niel Marisga</h3>
+                        <p class="position">Maintenance</p>
+                        <span>Present</span>
+                    </div>
+                </div>
+                <div class="person-card glint-card">
+                    <div class="person-photo"><img src="greg.jpg" alt="Admin"></div>
+                    <div class="person-info">
+                        <h3>Gregorio Canja</h3>
+                        <p class="position">Security Maintenance/Driver</p>
+                        <span>Present</span>
+                    </div>
+                </div>  
+            </div>
+
+            <h3 class="category-title">Teachers of the Institution</h3>
+            <div class="people-grid">
+                <div class="person-card glint-card"><div class="person-photo"><img src="alv.jpg" alt="Teacher"></div><div class="person-info"><h3>Alvin Balmes De Luis</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="elg.jpg" alt="Teacher"></div><div class="person-info"><h3>El Edsteferson Sioson Gamido</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="pat.jpg" alt="Teacher"></div><div class="person-info"><h3>Patrick Baylon</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="oliver.jpg" alt="Teacher"></div><div class="person-info"><h3>Oliver Domincil</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="carlo.jpg" alt="Teacher"></div><div class="person-info"><h3>Carlo Palad</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="ron.jpg" alt="Teacher"></div><div class="person-info"><h3>Ron Justine J. Mangubat</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="joriel.jpg" alt="Teacher"></div><div class="person-info"><h3>Joriel Untalan</h3><p class="position">Teacher</p><span>Former</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="charles.jpg" alt="Teacher"></div><div class="person-info"><h3>Charles Black</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="fea.jpg" alt="Teacher"></div><div class="person-info"><h3>Feajen Grefiel</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="ara.jpg" alt="Teacher"></div><div class="person-info"><h3>Ara Gamit</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="amor.jpg" alt="Teacher"></div><div class="person-info"><h3>Angela Amor Roldan</h3><p class="position">Teacher</p><span>Former</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="ange.jpg" alt="Teacher"></div><div class="person-info"><h3>Angela Dadaya</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="may.jpg" alt="Teacher"></div><div class="person-info"><h3>May Isabel M. Reyes</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="mali.png" alt="Teacher"></div><div class="person-info"><h3>Mariel Malibiran</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="romina.jpg" alt="Teacher"></div><div class="person-info"><h3>Romina Herrera</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="shiela.jpg" alt="Teacher"></div><div class="person-info"><h3>Shiela Francisco</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="lilibeth.jpg" alt="Teacher"></div><div class="person-info"><h3>Lilibeth Carbonel</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="jessabel.jpg" alt="Teacher"></div><div class="person-info"><h3>Jessabel</h3><p class="position">Teacher</p><span>Present</span></div></div>
+                <div class="person-card glint-card"><div class="person-photo"><img src="mira.jpg" alt="Teacher"></div><div class="person-info"><h3>Darlene Mira</h3><p class="position">Teacher</p><span>Present</span></div></div>
+            </div>
+        </section>
+
+<div class="witi-chat-widget">
+   
+    <div class="chat-bubble-prompt" id="chatPrompt">
+        <span>Need help? 👋</span>
+    </div>
+   
+    <button class="chat-toggle-btn" id="chatToggleBtn" onclick="toggleWitiChat()" aria-label="Open Chat">
+        💬
+    </button>
+
+    <div class="witi-chat-window" id="witiChatWindow">
+        <div class="chat-header">
+            <div class="bot-info">
+                <span class="bot-avatar">🤖</span>
+                <div>
+                    <h4>WITI Assistant</h4>
+                    <p>Online • Ask me about WITI</p>
+                </div>
+            </div>
+            <button class="chat-close-btn" onclick="toggleWitiChat()">×</button>
+        </div>
+        
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message bot">
+                <p>Hello! 👋 I am your WITI Assistant. How can I help you today?</p>
+            </div>
+            
+            <div class="chat-quick-replies" id="quickReplies">
+                <button onclick="askWiti('enrollment')"> How to enroll?</button>
+                <button onclick="askWiti('courses')"> What programs/tracks are available?</button>
+                <button onclick="askWiti('location')"> Where is the campus location?</button>
+                <button onclick="askWiti('requirements')"> What are the requirements?</button>
+                <button onclick="askWiti('tuition')"> How much is the tuition fee?</button>
+                <button onclick="askWiti('uniform')"> How much is the uniform?</button>
+                <button onclick="askWiti('cash')">How much is the cash assistance?</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <section id="witi-hymn" class="hymn-section" style="padding: 60px 20px; max-width: 1100px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 25px;">
+                <p class="small-title" style="color: #2563eb; font-weight: 700; letter-spacing: 1px; margin-bottom: 5px;">INSTITUTIONAL ANTHEM</p>
+                <h2 style="font-size: 32px; color: #0f172a; margin: 0;">🎥 WITI School Hymn Video</h2>
+                <p style="color: #64748b; font-size: 15px; margin-top: 8px;">Watch the official video anthem of Westbridge Institute of Technology, Inc.</p>
+            </div>
+
+           <section id="hymn" class="hymn-section">
+            <div class="youtube-watch-layout">
+                
+                <div class="yt-main-video-area">
+                    <div class="yt-player-wrapper">
+                        <video controls class="witi-custom-video">
+                            <source src="hymn.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="yt-sidebar-text-area">
+                    <div class="yt-text-content-box">
+                        <span class="yt-tag">OFFICIAL ANTHEM</span>
+                        <h3>WITI Hymn</h3>
+                        <p class="yt-credits">Westbridge Institute of Technology, Inc.</p>
+                        
+                        <div class="yt-lyrics-divider"></div>
+                        
+                        <h4>Official Lyrics</h4>
+                        <div class="yt-lyrics-scroll">
+                            <p>
+                                In the heart of our nation, foster love for everyone<br>
+                                We stand as a community, together we are one<br>
+                                To provide the education that is practical and true<br>
+                                The students of tomorrow, will get the greatest view<br><br>
+                                
+                                We commit to improve all the Westinians' and lives we touch<br>
+                                Wisdom and integrity, in Westbridge we'll have<br>
+                                The greatest duty of our institution's noble call<br>
+                                To shape the future of our country, we are standing tall<br><br>
+                                
+                                Our hands being united will make the darkness flee<br>
+                                With education as our key, in Westbridge we will see<br>
+                                To a future filled with hope, a nation proud and strong<br>
+                                Where every Westinian can live a life that's long<br><br>
+                                
+                                We commit to succeed all the Westinians' lives we touch<br>
+                                New skills, knowledge, ethics in Westbridge we'll have<br>
+                                The greatest duty of our institution's noble call<br>
+                                To shape the beauty of our country we are standing tall<br><br>
+
+                                The greatest duty of our institution's noble call<br>
+                                To shape the future of our country, we are standing tall<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        </section>
+
+        <section id="contact" class="contact">
+            <p class="small-title">GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <p>📍 San Jose Branch, Occidental Mindoro</p>
+            <p>📞 09123456789</p>
+            <p>📧 email@westbridge.edu.ph</p>
+        </section>
+            
+    </main>
+
+    <div id="personModal" class="person-modal">
+        <div class="person-modal-content">
+            <button class="person-modal-close" onclick="closePersonModal()">&times;</button>
+            <div class="person-modal-header">
+                <div class="person-modal-title-group">
+                    <h3 id="modalPersonName">Name Placeholder</h3>
+                    <p id="modalPersonPosition" class="modal-position">Position Placeholder</p>
+                    <div class="modal-status-badge">
+                        <span class="status-dot"></span>
+                        <span id="modalPersonStatus" class="modal-status">Present</span>
+                    </div>
+                    <p id="modalPersonMotto" class="modal-motto-header">""</p>
+                </div>
+                <img id="modalPersonImg" src="" alt="Person Photo">
+            </div>
+            <div class="person-modal-details">
+                <div class="detail-card"><span class="detail-label">Grade Level</span><p id="modalPersonGrade" class="detail-value">-</p></div>
+                <div class="detail-card"><span class="detail-label">Vacant Hour</span><p id="modalPersonVacant" class="detail-value">-</p></div>
+                <div class="detail-card"><span class="detail-label">Subject</span><p id="modalPersonSubject" class="detail-value">-</p></div>
+                <div class="detail-card"><span class="detail-label">Section Handled</span><p id="modalPersonSection" class="detail-value">-</p></div>
+                <div class="detail-card"><span class="detail-label">Experience</span><p id="modalPersonExp" class="detail-value">-</p></div>
+                <div class="detail-card"><span class="detail-label">FB Profile</span><p class="detail-value"><a id="modalPersonFb" href="#" target="_blank" rel="noopener">View FB Acc</a></p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="luxury-footer" style="text-align: center; padding: 1.5rem; color: #94a3b8; font-size: 0.85rem;">
+    <p>© 2026 Westbridge Institute of Technology, Inc. All rights reserved.</p>
+    <div style="margin-top: 0.5rem; display: flex; justify-content: center; gap: 15px;">
+        <a href="privacy.html" style="color: #38bdf8; text-decoration: none;">Privacy Policy</a>
+        <span>•</span>
+        <a href="terms.html" style="color: #38bdf8; text-decoration: none;">Terms of Service</a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+        
+
+</body>
+</html>

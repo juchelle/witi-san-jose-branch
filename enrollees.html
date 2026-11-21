@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Students Registry | WITI San Jose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="luxury-enroll-body">
+
+    <header class="luxury-header">
+        <a href="index.html" class="logo">WESTBRIDGE</a>
+
+        <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="#history">About</a>
+        <a href="#mission-vision">Vision & Mission</a>
+        <a href="#witi-hymn">WITI Hymn</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="facultySearchInput" placeholder="Search...">
+        <div id="searchHistoryDropdown" class="search-history-dropdown"></div>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
+    </header>
+
+    <div id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()" aria-label="Close Menu">×</button>
+        <div class="menu-title">
+            <span>WITI</span>
+            <p>San Jose Branch</p>
+        </div>
+        <nav>
+            <label class="cyber-switch">
+  <input type="checkbox" id="themeToggleCheckbox" onchange="toggleDarkMode()">
+  <span class="cyber-slider">
+    <span class="cyber-icon sun">☀️</span>
+    <span class="cyber-icon moon">🌙</span>
+    <span class="cyber-ball"></span>
+  </span>
+</label>
+            <a href="form.html">Enrollment Form</a>
+            <a href="enrollees.html">Pending Enrollments</a>
+             <a href="campus.html" class="active">Campus Gallery</a>
+            <a href="loc.html">Our Location</a>
+        </nav>
+    </div>
+
+    <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <main class="enrollment-wrapper">
+        <div class="enrollment-hero-head">
+            <span class="luxury-badge">ADMIN REGISTRY</span>
+            <h1>Status: Pending Verification</h1>
+            <p>Here are the details of all students who have submitted their enrollment applications, separated by grade level.</p>
+        </div>
+
+        <div class="glass-form-card" style="margin-bottom: 2rem;">
+            <h3 style="color: #38bdf8; margin-bottom: 1rem;">Grade 11 Pending Applicants</h3>
+            <div id="g11EnrolleesContainer">
+    
+            </div>
+        </div>
+        <div class="glass-form-card">
+            <h3 style="color: #38bdf8; margin-bottom: 1rem;">Grade 12 Pending Applicants</h3>
+            <div id="g12EnrolleesContainer">
+               
+            </div>
+        </div>
+    </main>
+
+    <footer class="luxury-footer" style="text-align: center; padding: 1.5rem; color: #94a3b8; font-size: 0.85rem;">
+    <p>© 2026 Westbridge Institute of Technology, Inc. All rights reserved.</p>
+    <div style="margin-top: 0.5rem; display: flex; justify-content: center; gap: 15px;">
+        <a href="privacy.html" style="color: #38bdf8; text-decoration: none;">Privacy Policy</a>
+        <span>•</span>
+        <a href="terms.html" style="color: #38bdf8; text-decoration: none;">Terms of Service</a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
