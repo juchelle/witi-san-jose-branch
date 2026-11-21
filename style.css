@@ -2641,68 +2641,13 @@ body.dark-mode .yt-lyrics-scroll p {
 body.dark-mode .yt-lyrics-scroll::-webkit-scrollbar-thumb {
     background: #334155 !important;
 }
-
-@media (max-width: 1024px) {
-    .youtube-watch-layout {
-        grid-template-columns: 1fr !important;
-        gap: 30px !important;
-    }
-}
-
-.people-section {
-    border-bottom: none !important;
-    box-shadow: none !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 20px !important;
-}
-
-.people-section, 
-#hymn.hymn-section, 
-.hymn-section {
-    background-color: #ffffff !important; 
-}
-body.dark-mode .people-section, 
-body.dark-mode #hymn.hymn-section, 
-body.dark-mode .hymn-section {
-    background-color: #0f172a !important; 
-}
 @media screen and (max-width: 768px) {
-    html, body {
-        max-width: 100vw;
+    html {
+        transform: scale(0.85);
+        transform-origin: top center;
+        width: 117.65%;
+    }
+    body {
         overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container, div, section, header, footer {
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .row, .grid, .flex-container, [class*="container"], [class*="wrapper"] {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 15px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-    h1 { font-size: 28px !important; text-align: center; }
-    h2 { font-size: 22px !important; text-align: center; }
-    h3 { font-size: 18px !important; text-align: center; }
-    p, span, a { font-size: 14px !important; text-align: center; }
-
-    img, video {
-        max-width: 100% !important;
-        height: auto !important;
-        object-fit: contain;
-    }
-
-    nav, .nav-links, header {
-        flex-direction: column !important;
-        gap: 10px !important;
-        width: 100% !important;
     }
 }
