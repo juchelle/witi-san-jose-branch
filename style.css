@@ -2667,52 +2667,42 @@ body.dark-mode .hymn-section {
     background-color: #0f172a !important; 
 }
 @media screen and (max-width: 768px) {
-    body, section {
-        padding: 20px 4%;
-        width: 100%;
-        box-sizing: border-box;
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
 
-    h1 {
-        font-size: 32px !important;
+    .container, div, section, header, footer {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    h2 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 15px !important;
-    }
-
-    .container, .fitness-container, .workout-wrapper, .about-wrapper {
+    .row, .grid, .flex-container, [class*="container"], [class*="wrapper"] {
+        display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
         width: 100% !important;
         gap: 15px !important;
-        margin: 10px 0 !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 
-    .grid-layout, .cards-grid, .menu-container {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-        padding: 10px !important;
-    }
+    h1 { font-size: 28px !important; text-align: center; }
+    h2 { font-size: 22px !important; text-align: center; }
+    h3 { font-size: 18px !important; text-align: center; }
+    p, span, a { font-size: 14px !important; text-align: center; }
 
-    img {
+    img, video {
         max-width: 100% !important;
         height: auto !important;
+        object-fit: contain;
     }
 
-    header {
+    nav, .nav-links, header {
         flex-direction: column !important;
-        padding: 10px 5% !important;
         gap: 10px !important;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px !important;
+        width: 100% !important;
     }
 }
