@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Makinig kung binago ang switch ng dark mode
     if (darkModeCheckbox) {
         darkModeCheckbox.addEventListener("change", function () {
             if (this.checked) {
@@ -264,7 +263,7 @@ const peopleDatabase = {
         subject: "Not Specified",
         section: "Not Specified",
         exp: "Not Specified",
-        fb: "https://facebook.com",
+        fb: "https://www.facebook.com/profile.php?id=61578101352065",
     },
     "Angela Amor Roldan": {
         grade: "Not Specified",
