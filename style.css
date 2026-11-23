@@ -2641,4 +2641,16 @@ body.dark-mode .yt-lyrics-scroll p {
 body.dark-mode .yt-lyrics-scroll::-webkit-scrollbar-thumb {
     background: #334155 !important;
 }
-
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
