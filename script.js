@@ -184,7 +184,7 @@ const peopleDatabase = {
     "Gregorio Canja": {
         vacant: "8:00 AM - 6:00 PM",
         exp: "6 Years",
-        fb: "https://www.facebook.com/sam.mingao",
+        fb: "https://www.facebook.com/share/19ujx3LgHQ/",
     },
     "Alvin Balmes De Luis": {
         grade: "Grade 11 & Grade 12",
