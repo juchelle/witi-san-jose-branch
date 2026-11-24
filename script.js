@@ -327,7 +327,7 @@ const peopleDatabase = {
         subject: "Not Specified",
         section: "Not Specified",
         exp: "1 year",
-        fb: "https://www.facebook.com/share/18znm7D9Nz/",
+        fb: "https://www.facebook.com/mirazcx?mibextid=rS40aB7S9Ucbxw6v",
     },
     "Jessabel": {
         grade: "Not Specified",
